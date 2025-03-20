@@ -1,4 +1,12 @@
 {
   "name": "SAP CAP Dev Container",
-  "dockerFile": "Dockerfile"
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "SAPSE.vscode-cds"
+      ]
+    }
+  }
 }
