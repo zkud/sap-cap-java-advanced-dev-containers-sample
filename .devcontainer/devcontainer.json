@@ -8,5 +8,6 @@
         "SAPSE.vscode-cds"
       ]
     }
-  }
+  },
+  "remoteUser": "dev"
 }

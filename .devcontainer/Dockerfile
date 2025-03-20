@@ -11,3 +11,5 @@ RUN apt-get install -y git
 
 # Install maven
 RUN apt-get install maven -y
+
+RUN echo '\n\n\n\n\ny' | adduser --disabled-password dev --gid 1000
