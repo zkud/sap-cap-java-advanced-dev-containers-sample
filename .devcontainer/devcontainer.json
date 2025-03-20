@@ -6,7 +6,10 @@
       "extensions": [
         "vscjava.vscode-java-pack",
         "SAPSE.vscode-cds"
-      ]
+      ],
+      "settings": {
+        "java.autobuild.enabled": false
+      }
     }
   },
   "remoteUser": "ubuntu",
