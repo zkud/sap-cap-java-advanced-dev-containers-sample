@@ -9,5 +9,10 @@
       ]
     }
   },
-  "remoteUser": "dev"
+  "remoteUser": "ubuntu",
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+    "source=${localWorkspaceFolderBasename}-m2,target=/home/ubuntu/.m2,type=volume"
+  ],
+  "postCreateCommand": "sudo chown ubuntu -R node_modules & sudo chown ubuntu -R /home/ubuntu/"
 }

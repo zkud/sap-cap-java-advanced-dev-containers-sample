@@ -12,4 +12,8 @@ RUN apt-get install -y git
 # Install maven
 RUN apt-get install maven -y
 
-RUN echo '\n\n\n\n\ny' | adduser --disabled-password dev --gid 1000
+# Enable sudo support to configure deps reuse
+ARG USERNAME=ubuntu
+RUN apt-get install sudo -y \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
